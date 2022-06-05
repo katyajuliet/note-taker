@@ -1,6 +1,5 @@
 {
   "name": "note-taker",
-  "version": "1.0.0",
   "description": "An app that can write, save, and delete notes.",
   "main": "./note-taker/public/assets/js/index.js",
   "scripts": {
@@ -12,16 +11,16 @@
   },
   "keywords": [
     "application",
-    "mysql",
-    "express",
-    "note",
-    "taker",
+    "note taker",
     "coding",
-    "bootcamp"
+    "bootcamp",
+    "mysql",
+    "express"
   ],
   "dependencies": {
     "express": "^4.17.1",
-    "jest": "^25.1.0",
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.0",
     "mysql": "^2.18.0"
   }
 }

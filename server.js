@@ -6,7 +6,7 @@ const database = require("./db/db")
 
 //app set up
 var app = express();
-var PORT = process.env.PORT || 3001;
+var PORT = process.env.PORT || 3000;
 
 //links to assets inside of the public folder
 app.use(express.static('public'));
@@ -54,7 +54,7 @@ app.get("/notes", function (req, res) {
         database.push(newNote)
 
         // 
-        fs.writeFile(jsonFilePath, JSON.stringify(database), function (err) {
+        fs.writeFile(jsonFilePath, JSON.stringify(database, null, 4), function (err) {
 
             if (err) {
                 return console.log(err);
