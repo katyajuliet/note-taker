@@ -6,7 +6,7 @@ const database = require("./db/db")
 
 //app set up
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3001;
 
 //links to assets inside of the public folder
 app.use(express.static('public'));
@@ -65,7 +65,7 @@ app.get("/notes", function (req, res) {
         res.json(newNote);
     });
 
-//delete note
+//delete note - loop in order to read id and sort to delete only note with id chosen by user
 
 app.delete("/api/notes/:id", function (req, res) {
     let jsonFilePath = path.join(__dirname, "/db/db.json");
@@ -90,7 +90,7 @@ app.delete("/api/notes/:id", function (req, res) {
     res.json(database);
 });
 
-//server set up
+//server set up - active listen
 app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
 });
