@@ -22,7 +22,7 @@ Run npm i express, npm i jest, npm i heroku
 Application Built with: Heroku, Express, Node, Inquirer, JSON, JavaScript, HTML, CSS, Bootstrap
 
 ##### Screenshot
-<img src=".public/assets/images/screenshot-1.png">
-<img src=".public/assets/images/screenshot-2.png">
+<img src="./assets/images/screenshot-1.png">
+<img src="./assets/images/screenshot-2.png">
 
 
