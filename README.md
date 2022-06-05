@@ -1,11 +1,6 @@
 # Note-Taker
 Note app online that allows the users to take, save and delete notes. Using Express JS, JSON and Node, we are able to save, post & delete notes and retain the content on file.
 
-## Table of Contents
-* [Screenshots](#screenshots)
-* [License](#license)
-* [Installation](#installation)
-
 ### License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -27,7 +22,7 @@ Run npm i express, npm i jest, npm i heroku
 Application Built with: Heroku, Express, Node, Inquirer, JSON, JavaScript, HTML, CSS, Bootstrap
 
 ##### Screenshot
-![screenshot1](./assets/images/screenshot-1.png)
-![screenshot2](./assets/images/screenshot-2.png)
+<img src=".public/assets/images/screenshot-1.png">
+<img src=".public/assets/images/screenshot-2.png">
 
 
