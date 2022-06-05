@@ -28,12 +28,12 @@ app.get("/notes", function (req, res) {
 
 
 //get post app routes 
-    .get(function (req, res) {
+    app.get(function (req, res) {
         res.json(database);
     })
 
     // Add a new notes and join path
-    .post(function (req, res) {
+    app.post(function (req, res) {
         let jsonFilePath = path.join(__dirname, "/db/db.json");
         let newNote = req.body;
 
@@ -54,7 +54,7 @@ app.get("/notes", function (req, res) {
         database.push(newNote)
 
         // 
-        fs.writeFile(jsonFilePath, JSON.stringify(database, null, 4), function (err) {
+        fs.writeFile(jsonFilePath, JSON.stringify(database), function (err) {
 
             if (err) {
                 return console.log(err);
@@ -79,7 +79,7 @@ app.delete("/api/notes/:id", function (req, res) {
         }
     }
     // Write the db.json file
-    fs.writeFileSync(jsonFilePath, JSON.stringify(database), function (err) {
+    fs.writeFileSync(jsonFilePath, JSON.stringify(database, null, 4), function (err) {
 
         if (err) {
             return console.log(err);
